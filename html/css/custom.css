@@ -1,0 +1,293 @@
+html, body, .row {
+	background-color: black;
+}
+
+html {
+	padding-top: 50px;
+}
+
+.yearly-container {
+	display: none;
+}
+
+.monthly-container {
+	display: none;
+}
+
+.daily-title {
+	color: #8285FF !important;
+}
+
+.monthly-title {
+	color: #DA6D8B !important;
+}
+
+.yearly-title {
+	color: #50A069 !important;
+}
+
+.li-daily {
+	border: 4px solid #8285FF;
+}
+
+.li-monthly {
+	border: 4px solid #DA6D8B;
+}
+
+.li-yearly {
+	border: 4px solid #50A069;
+}
+
+.dates {
+	color: #878585;
+}
+
+.centered {
+	text-align:center;
+}
+
+.margin {
+	margin-top: 30px;
+}
+
+.margin-sm {
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.daily {
+	color: #8285FF !important;
+	font-weight: bold;
+	font-size: 1.3em;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.btn-monthly {
+	background-color: #DA6D8B;
+	color: white;
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+
+.btn-yearly {
+	background-color: #50A069 !important;
+	color: white;
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+
+.btn-yearly:hover {
+	background-color: #025F1F !important;
+	color: white;
+}
+
+.btn-monthly:hover {
+	background-color: #B10A38;
+	color: white;
+}
+
+.btn-daily {
+	background-color: #8285FF !important;
+	color: white;
+	-webkit-transition: background-color 1s; /* Safari */
+    transition: background-color 1s;
+}
+
+.btn-daily:hover {
+	background-color: #0005C5 !important;
+	color: white;
+}
+
+.daily:hover {
+	color: #F7F7A7 !important;
+}
+
+.monthly {
+	
+	font-weight: bold;
+	font-size: 1.3em;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+    color: #DA6D8B !important;
+
+}
+
+.monthly:hover {
+	color: #F7F7A7 !important;
+}
+
+.yearly {
+	color: #50A069 !important;
+	font-weight: bold;
+	font-size: 1.3em;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.yearly:hover {
+	color: #F7F7A7 !important;
+}
+
+.mastfoot p {
+	color: #767676;
+}
+
+.list-group-item {
+	position: relative;
+	padding-top: 28px;
+	border: 1px solid #A4A3A3 !important;
+	cursor: grabbing;
+}
+
+.message-item {
+	cursor: text;
+}
+
+.menu-li-button {
+	font-size: 20px;
+	position: absolute;
+	top: 3px;
+	right: 2px;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.menu-li-button:hover {
+	cursor: pointer;
+	color: orange;
+}
+
+.menu-button-item {
+	display: none;
+}
+
+.menu-button-item:hover {
+	cursor: pointer;
+}
+
+.delete {
+	position: absolute;
+	top: 5px;
+	right: 40px;
+}
+
+.control-buttons {
+	font-size: 20px;
+}
+
+.delete-button {
+	color: #FF0000;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.delete-button:hover {
+	color: #920101;
+}
+
+.glyphicon-arrow-up {
+	position: absolute;
+	top: 5px;
+	right: 85px;
+}
+
+.glyphicon-arrow-up:hover {
+	color: orange;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.glyphicon-ok {
+	position: absolute;
+	color: #2BE700 !important;
+	top: 5px;
+	right: 160px;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.glyphicon-ok:hover {
+	color: #01621A !important;
+}
+
+.glyphicon-menu-hamburger {
+	color: #878585 !important;
+}
+
+.glyphicon-arrow-down {
+	position: absolute;
+	top: 5px;
+	right: 120px;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.glyphicon-arrow-down:hover {
+	color: orange !important;
+}
+
+.glyphicon-pencil {
+	color: #C77500;
+	position: absolute;
+	top: 5px;
+	right: 200px;
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+}
+
+.glyphicon-pencil:hover {
+	color: #E5D800;
+}
+
+.trash-can {
+	color: red;
+	float: right;
+	font-size: 20px;
+}
+
+.trash-can:hover {
+	-webkit-transition: color 1s; /* Safari */
+    transition: color 1s;
+	color: #FF8C1B;
+	float: right;
+	cursor: pointer;
+}
+
+.completed-item {
+	color: #A8A8A8;
+	text-decoration: line-through;
+}
+
+.uncompleted-item {
+	font-weight: bolder;
+}
+
+.form-popup {
+	z-index: 100;
+	background-color: rgba(0, 0, 0, .8);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	padding-top: 75px;
+	display: none;
+}
+
+.form-popup h3 {
+	color: white;
+}
+
+
+/*@media (max-width: 600px) {
+	.glyphicon-arrow-up {
+		display: inline-block;
+	}
+	.glyphicon-arrow-down {
+		display: inline-block;
+	}
+}*/
+
+
+

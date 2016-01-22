@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Yearly Goal App</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    
+    <!-- navigation block -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Goal Organizer</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a id="daily" class="nav-button daily" href="#">Daily</a></li>
+            <li><a id="monthly" class="nav-button monthly" href="#">Monthly</a></li>
+            <li><a id="yearly" class= "nav-button yearly" href="#">Yearly</a></li>
+            <li><a class= "logout" href="#">Logout</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <!-- end navigation block -->
+
+
+    <!-- begin daily container -->
+    <div class="daily-container view-block">
+      <div class="container margin">
+        <div class="row">
+          <h1 class="centered daily-title">Daily</h1>
+        </div>
+      </div>
+
+
+      <div class="row margin-sm">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="well li-daily">
+              <form class="form-horizontal" role="form">
+                <div class="form-group" style="padding:14px;">
+                  <textarea class="form-control" placeholder="Add a Daily Goal..."></textarea>
+                </div>
+                <div class="centered">
+                  <button class="btn btn-daily" type="button">Add Goal</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      
+
+
+
+
+      <!-- buttons panel -->
+      <!-- <div class="row margin">
+        <div class="col-md-6 col-md-offset-3 centered">
+          <button class="daily btn btn-success btn-lg">Daily</button>
+          <button class="monthly btn btn-info btn-lg">Monthly</button>
+          <button class="yearly btn btn-warning btn-lg">Yearly</button>
+        </div>
+      </div> -->
+      <!-- end buttons panel -->
+
+      <!-- enter item panel -->
+      <div class="row margin margin-sm">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default li-daily">
+            <div class="panel-heading">
+                <h4>Daily Goals <span class="trash-can glyphicon glyphicon-trash" aria-hidden="true" title="Delete All List Items"></span></h4>
+            </div>
+              <div class="panel-body">
+                <div class="list-group sort-container">
+                  <div class="list-group-item" data-id="1">
+                    <span class="uncompleted-item message-item">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus repellat deserunt necessitatibus accusantium tempora voluptatum nulla atque fugiat adipisci ducimus ab iste iure facilis, pariatur modi, officia, quis minus.</span>
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="menu-li-button">
+                      <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="delete menu-button-item" title="Delete Item">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="menu-button-item" title="Check Off Item">
+                      <span class="glyphicon glyphicon-ok control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item" title="Move Item Up">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item" title="Move Item Down">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item" title="Edit Text">
+                      <span class="glyphicon glyphicon-pencil control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="list-group-item" data-id="1">
+                    <span class="uncompleted-item message-item">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus repellat deserunt necessitatibus accusantium tempora voluptatum nulla atque fugiat adipisci ducimus ab iste iure facilis, pariatur modi, officia, quis minus.</span>
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="menu-li-button">
+                      <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="delete menu-button-item">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="menu-button-item">
+                      <span class="glyphicon glyphicon-ok control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-pencil control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="list-group-item" data-id="1">
+                    <span class="uncompleted-item message-item">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus repellat deserunt necessitatibus accusantium tempora voluptatum nulla atque fugiat adipisci ducimus ab iste iure facilis, pariatur modi, officia, quis minus.</span>
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="menu-li-button">
+                      <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="delete menu-button-item">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="menu-button-item">
+                      <span class="glyphicon glyphicon-ok control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-pencil control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+
+                  <div class="list-group-item" data-id="1">
+                    <span class="uncompleted-item message-item">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus repellat deserunt necessitatibus accusantium tempora voluptatum nulla atque fugiat adipisci ducimus ab iste iure facilis, pariatur modi, officia, quis minus.</span>
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="menu-li-button">
+                      <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="delete menu-button-item">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="menu-button-item">
+                      <span class="glyphicon glyphicon-ok control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-pencil control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+
+                  
+
+
+                  <div class="list-group-item">
+                    <span class="completed-item">  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum natus repellat deserunt necessitatibus accusantium tempora voluptatum nulla atque fugiat adipisci ducimus ab iste iure facilis, pariatur modi, officia, quis minus.</span>
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="menu-li-button">
+                      <span class="glyphicon glyphicon-menu-hamburger"></span>
+                    </div>
+                    <div class="delete menu-button-item">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="menu-button-item">
+                      <span class="glyphicon glyphicon-ok control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item menu-button-item">
+                      <span class="glyphicon glyphicon-pencil control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+
+                  
+
+
+
+                </div>
+              </div>
+              <!--/panel-body-->
+            </div>
+            <!-- end col -->
+          </div>
+          <!--/panel-->
+      </div> 
+      <!-- end row -->
+      <!-- enter item panel end -->
+    </div>
+    <!-- end daily container -->
+
+
+
+
+    <!-- begin monthly container -->
+    <div class="monthly-container view-block">
+      <div class="container margin">
+        <div class="row">
+          <h1 class="centered monthly-title">Monthly</h1>
+        </div>
+      </div>
+
+
+      <div class="row margin-sm">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="well li-monthly">
+              <form class="form-horizontal" role="form">
+                <div class="form-group" style="padding:14px;">
+                  <textarea class="form-control" placeholder="Add a Monthly Goal..."></textarea>
+                </div>
+                <div class="centered">
+                  <button class="btn btn-monthly" type="button">Add Goal</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      
+
+
+
+
+      <!-- buttons panel -->
+      <!-- <div class="row margin">
+        <div class="col-md-6 col-md-offset-3 centered">
+          <button class="daily btn btn-success btn-lg">Daily</button>
+          <button class="monthly btn btn-info btn-lg">Monthly</button>
+          <button class="yearly btn btn-warning btn-lg">Yearly</button>
+        </div>
+      </div> -->
+      <!-- end buttons panel -->
+
+      <!-- enter item panel -->
+      <div class="row margin margin-sm">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default li-monthly">
+            <div class="panel-heading"><h4>Monthly Goals</h4></div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              <!--/panel-body-->
+            </div>
+            <!-- end col -->
+          </div>
+          <!--/panel-->
+      </div> 
+      <!-- end row -->
+      <!-- enter item panel end -->
+    </div>
+    <!-- end monthly container -->
+
+
+
+
+
+    
+    <!-- begin yearly container -->
+    <div class="yearly-container view-block">
+      <div class="container margin">
+        <div class="row">
+          <h1 class="centered yearly-title">Yearly</h1>
+        </div>
+      </div>
+
+
+      <div class="row margin-sm">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="well li-yearly">
+              <form class="form-horizontal" role="form">
+                <div class="form-group" style="padding:14px;">
+                  <textarea class="form-control" placeholder="Add a Yearly Goal..."></textarea>
+                </div>
+                <div class="centered">
+                  <button class="btn btn-yearly" type="button">Add Goal</button>
+                </div>
+              </form>
+            </div>
+        </div>
+      </div>
+      
+
+
+
+
+      <!-- buttons panel -->
+      <!-- <div class="row margin">
+        <div class="col-md-6 col-md-offset-3 centered">
+          <button class="daily btn btn-success btn-lg">Daily</button>
+          <button class="monthly btn btn-info btn-lg">Monthly</button>
+          <button class="yearly btn btn-warning btn-lg">Yearly</button>
+        </div>
+      </div> -->
+      <!-- end buttons panel -->
+
+      <!-- enter item panel -->
+      <div class="row margin margin-sm">
+        <div class="col-md-6 col-md-offset-3">
+          <div class="panel panel-default li-yearly">
+            <div class="panel-heading"><h4>Yearly Goals</h4></div>
+              <div class="panel-body">
+                <div class="list-group">
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  <div class="list-group-item">
+                    Second item 
+                    <br>
+                    <br>
+                    <em><small class="dates">Jan 21, 2015</small></em>
+                    <div class="delete">
+                      <span class="glyphicon glyphicon-remove delete-button control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-up control-buttons" aria-hidden="true"></span>
+                    </div>
+                    <div class="move-list-item">
+                      <span class="glyphicon glyphicon-arrow-down control-buttons" aria-hidden="true"></span>
+                    </div>
+                  </div>
+                  
+                  
+                </div>
+              </div>
+              <!--/panel-body-->
+            </div>
+            <!-- end col -->
+          </div>
+          <!--/panel-->
+      </div> 
+      <!-- end row -->
+      <!-- enter item panel end -->
+    </div>
+    <!-- end yearly container -->
+
+
+
+
+
+    <div class="cover-container centered margin">
+      <div class="mastfoot">
+        <div class="inner">
+          <p>Goal Organizer<br>All Rights Reserved &copy; 2015</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- begin modify message form -->
+    <div class="form-popup">
+        <div class="col-md-4 col-md-offset-4">
+          <form action="post" class="centered">
+            <h3 class="centered">Modify List Item</h3>
+            <div class="form-group">
+              <textarea class="form-control" rows="5"></textarea>
+            </div>
+            <input class="message-id" type="hidden">
+            <button type="submit" class="btn btn-success">Update</button>
+            <div class="btn btn-warning cancel-btn">Cancel</div>
+          </form>
+        </div>
+    </div>
+    <!-- end modify message form -->
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom script -->
+    <script src="js/custom.js"></script>
+    <!-- custom script -->
+    <script src="js/jquery-ui.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+    

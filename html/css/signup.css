@@ -1,0 +1,20 @@
+form {
+	background-color: white;
+	padding: 20px;
+	margin-top: 20px;
+	border: 2px solid #919191;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+legend {
+	color: #950000;
+}
+
+html, body {
+	background-color: black;
+}
+
+
+
+
